@@ -348,11 +348,11 @@ def debug(gameboard, image):
             if val == '?':
                 color = getCandyColor(y+1, x+1, image)
                 unknown.append([color, y+1, x+1])
-            print gameboard[y][x],
-        print '\n'
+            print(gameboard[y][x], end=' ')
+        print ('\n')
     for entry in unknown:
-            print entry
-    print '-' * 18 + '\n'
+            print(entry)
+    print ('-') * 18 + '\n'
 #
 # show section of screen that was cropped
 def debugImg(img):
@@ -377,7 +377,7 @@ def initializeBoard(gameboard):
 #
 # Entry point of program
 #
-print "Running ..."
+print ("Running...")
 while not win32api.GetAsyncKeyState(ord('Q')) < 0:
     POSSIBLE_SWAPS = {}
     gameboard = [[0 for c in range(COLS)] for r in range(ROWS)]
