@@ -2,7 +2,7 @@ from PIL import Image
 import win32api, win32con
 import time
 import cv2
-from mss.windows import MSS as mss
+import mss
 import numpy as np
 
 
